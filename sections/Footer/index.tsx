@@ -13,7 +13,7 @@ function Footer( { messengerActive, messengerLoading } : any ) : JSX.Element {
     useEffect(() => {
         setIsMessengerActive(isActive);
         showMessenger(isActive);
-    }, [messengerActive])
+    }, [messengerActive, isActive])
 
     const handleMessengerDialog = (isActive : boolean) => {
         setIsMessengerActive(isActive);
