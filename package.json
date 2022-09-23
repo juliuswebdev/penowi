@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^4.23.1",
     "@react-spring/web": "^9.5.2",
     "@types/styled-components": "^5.1.26",
     "dotenv": "^16.0.2",
