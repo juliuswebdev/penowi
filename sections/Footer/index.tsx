@@ -27,7 +27,7 @@ function Footer( { messengerActive, messengerLoading } : any ) : JSX.Element {
         <>
             <StyledFooterMessenger>
                 <MessengerChat
-                    pageId="12345"
+                    pageId="102115299319214"
                     language="en_US"
                     themeColor={"#000000"}
                     bottomSpacing={40}
