@@ -34,8 +34,8 @@ function Home() : JSX.Element {
               <div className="loading">In Progress <span>Loading</span></div>
               <h1>Soon Available in:</h1>
               <ul>
-                <li><a href="#"><span>Lazada</span><img src={icon_lazada} /></a></li>
-                <li><a href="#"><span>Shopee</span><img src={icon_shopee} /></a></li>
+                <li><a href="https://www.facebook.com/penowi/"><span>Lazada</span><img src={icon_lazada} /></a></li>
+                <li><a href="https://www.facebook.com/penowi/"><span>Shopee</span><img src={icon_shopee} /></a></li>
               </ul>
             </StyledHomeContent>
             {transitions((style, i) => (

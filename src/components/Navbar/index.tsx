@@ -48,10 +48,10 @@ function NavBar( { isActive, isContactActive, isContactLoading }  : any ) : JSX.
             </StyledNavigation>
             <StyledNavFooter>
                 <ul>
-                    <li><a href="#"><span>Lazada</span><img src={icon_lazada} /></a></li>
-                    <li><a href="#"><span>Shopee</span><img src={icon_shopee} /></a></li>
-                    <li><a href="#"><span>Facebook</span><img src={icon_facebook} /></a></li>
-                    <li><a href="#"><span>Instagram</span><img src={icon_instagram} /></a></li>
+                    <li><a href="https://www.facebook.com/penowi/"><span>Lazada</span><img src={icon_lazada} /></a></li>
+                    <li><a href="https://www.facebook.com/penowi/"><span>Shopee</span><img src={icon_shopee} /></a></li>
+                    <li><a href="https://www.facebook.com/penowi/"><span>Facebook</span><img src={icon_facebook} /></a></li>
+                    <li><a href="https://www.facebook.com/penowi/" target="_blank"><span>Instagram</span><img src={icon_instagram} /></a></li>
                 </ul>
             </StyledNavFooter>
         </StyledNavBar>
