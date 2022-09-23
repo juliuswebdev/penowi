@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 
 import { StyledNavBar, StyledNavLogo, StyledNavigation, StyledNavFooter, StyledHambugerMenu } from './index.styled'
 
@@ -27,7 +26,7 @@ function NavBar( { isActive, isContactActive, isContactLoading }  : any ) : JSX.
     return (
         <StyledNavBar className={ active ? 'active' : '' }>
             <StyledNavLogo>
-                <Image alt="image" src={logo_website} />
+                <img src={logo_website} />
             </StyledNavLogo>
             <StyledHambugerMenu 
                 className={ active ? 'menu-open' : '' }
@@ -49,10 +48,10 @@ function NavBar( { isActive, isContactActive, isContactLoading }  : any ) : JSX.
             </StyledNavigation>
             <StyledNavFooter>
                 <ul>
-                    <li><a href="#"><span>Lazada</span><Image alt="image" src={icon_lazada} /></a></li>
-                    <li><a href="#"><span>Shopee</span><Image alt="image" src={icon_shopee} /></a></li>
-                    <li><a href="#"><span>Facebook</span><Image alt="image" src={icon_facebook} /></a></li>
-                    <li><a href="#"><span>Instagram</span><Image alt="image" src={icon_instagram} /></a></li>
+                    <li><a href="#"><span>Lazada</span><img src={icon_lazada} /></a></li>
+                    <li><a href="#"><span>Shopee</span><img src={icon_shopee} /></a></li>
+                    <li><a href="#"><span>Facebook</span><img src={icon_facebook} /></a></li>
+                    <li><a href="#"><span>Instagram</span><img src={icon_instagram} /></a></li>
                 </ul>
             </StyledNavFooter>
         </StyledNavBar>

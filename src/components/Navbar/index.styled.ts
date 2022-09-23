@@ -12,7 +12,7 @@ const StyledNavBar = styled.div`
     z-index: 99;
     max-width: 210px;
     height: 100vh;
-    background: url(${pattern.src}) repeat;
+    background: url('${pattern}') repeat;
     background-size: 34%;
     border-right: 5px solid #fff;
     transition: all ease-in-out .2s;
@@ -25,22 +25,19 @@ const StyledNavBar = styled.div`
 `
 
 const StyledNavLogo = styled.div`
-    span {
-        overflow: inherit!important;
-        img {
-            background: rgba(255,255,255);
-            max-width: 300px!important;
-            width: auto!important;
-            padding: 20px 40px!important;
-            border-right: 5px solid #000!important;
-            @media ${device.tabletL } {
-                position: fixed;
-                left:0;
-                top:0;
-                z-index: 99;
-                max-width: 210px;
-                padding: 10px 20px;
-            }
+    img {
+        background: rgba(255,255,255);
+        max-width: 300px;
+        width: auto;
+        padding: 20px 40px;
+        border-right: 5px solid #000;
+        @media ${device.tabletL } {
+            position: fixed;
+            left:0;
+            top:0;
+            z-index: 99;
+            max-width: 210px;
+            padding: 10px 20px;
         }
     }
 `

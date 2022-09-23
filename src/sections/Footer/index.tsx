@@ -3,7 +3,7 @@ import { MessengerChat, showMessenger } from "react-messenger-chat-plugin"
 
 import { StyledFooterMessenger, StyledFooterMessengerTest } from "./index.styled"
 
-
+const { VITE_FACEBOOK_ID } = import.meta.env;
 
 function Footer( { messengerActive, messengerLoading } : any ) : JSX.Element {
   
@@ -13,7 +13,7 @@ function Footer( { messengerActive, messengerLoading } : any ) : JSX.Element {
     useEffect(() => {
         setIsMessengerActive(isActive);
         showMessenger(isActive);
-    }, [messengerActive, isActive])
+    }, [messengerActive])
 
     const handleMessengerDialog = (isActive : boolean) => {
         setIsMessengerActive(isActive);
@@ -27,7 +27,7 @@ function Footer( { messengerActive, messengerLoading } : any ) : JSX.Element {
         <>
             <StyledFooterMessenger>
                 <MessengerChat
-                    pageId="102115299319214"
+                    pageId={VITE_FACEBOOK_ID}
                     language="en_US"
                     themeColor={"#000000"}
                     bottomSpacing={40}

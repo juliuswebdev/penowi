@@ -2,14 +2,11 @@ import { StyledHomeContainer, StyledHomeContent, StyledHeroImage } from './index
 import  { useState } from 'react'
 import { useTransition, animated } from '@react-spring/web'
 
-import Image from 'next/image'
-
 import image_hero1 from './../../assets/images/hero/hero1.jpg'
 import image_hero2 from './../../assets/images/hero/hero2.jpg'
 
 import icon_lazada from './../../assets/images/icons/lazada.png';
 import icon_shopee from './../../assets/images/icons/shopee.png';
-
 
 const slides = [
     image_hero1,
@@ -35,21 +32,21 @@ function Home() : JSX.Element {
         <StyledHomeContainer>
             <StyledHomeContent>
               <div className="loading">In Progress <span>Loading</span></div>
-              <h1 style={{
-                backgroundImage: `url(${icon_lazada})`,
-              }}>Soon Available in:</h1>
+              <h1>Soon Available in:</h1>
               <ul>
-                <li><a href="#"><span>Lazada</span><Image alt="image" src={icon_lazada} /></a></li>
-                <li><a href="#"><span>Shopee</span><Image alt="image" src={icon_shopee} /></a></li>
+                <li><a href="#"><span>Lazada</span><img src={icon_lazada} /></a></li>
+                <li><a href="#"><span>Shopee</span><img src={icon_shopee} /></a></li>
               </ul>
             </StyledHomeContent>
             {transitions((style, i) => (
                 <StyledHeroImage> 
-                  <animated.div 
-                    key={i} 
-                    style={{ ...style, backgroundImage: `url(${slides[i].src})` }}
-                  > 
-                  </animated.div>
+                <animated.div
+                    style={{
+                    ...style,
+                    backgroundImage: `url(${slides[i]})`,
+                    }}
+                />
+                
                 </StyledHeroImage> 
             ))}
         </StyledHomeContainer>
